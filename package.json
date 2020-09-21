@@ -1,0 +1,19 @@
+{
+  "name": "journey_pal_api",
+  "version": "1.0.0",
+  "description": "Journey Pal is a RESTful-API built with Node using Express and handles CRUD functionality for Journey Pal's routes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "travel",
+    "api",
+    "express",
+    "node",
+    "javascript"
+  ],
+  "author": "Leo Medina",
+  "license": "ISC"
+}
