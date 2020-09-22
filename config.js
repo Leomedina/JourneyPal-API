@@ -1,7 +1,8 @@
-/** Shared config for application */
+/** Shared configs for the application */
+require("dotenv").config();
 
 const SECRET_KEY = process.env.SECRET_KEY || "test";
-const PORT = +process.env.PORT || 3001;
+const PORT = +process.env.PORT || 3000;
 let DB_URI;
 
 if (process.env.NODE_ENV === "test") {
