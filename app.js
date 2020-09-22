@@ -1,8 +1,9 @@
+global.__basedir = __dirname;
+
 const express = require('express');
 const ExpressError = require('./helpers/ExpressError');
 const app = express();
 const userRoutes = require('./routes/users')
-
 
 /** Allow JSON body parsing */
 app.use(express.json());
