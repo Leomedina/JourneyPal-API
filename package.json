@@ -21,6 +21,6 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonschema": "^1.2.6",
-    "lightweight-pg-orm": "^0.5.8"
+    "lightweight-pg-orm": "^0.5.9"
   }
 }
