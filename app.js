@@ -4,19 +4,20 @@ const express = require('express');
 const ExpressError = require('./helpers/ExpressError');
 const app = express();
 const userRoutes = require('./routes/users')
+const apiRoutes = require('./routes/api')
 
 /** Allow JSON body parsing */
 app.use(express.json());
 
 /** Routes */
 app.use('/users', userRoutes);
-
+app.use('/api', apiRoutes);
 
 app.get('/', function (req, res, next) {
   return res.status(200).json({
     'status': 200,
-    'item': "This is the homepage, nothing to see here.",
-  })
+    'success': 'success'
+  });
 });
 
 /** 404 Error Handler */
