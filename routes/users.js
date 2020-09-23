@@ -6,7 +6,7 @@
  *  -> GET    "/"       - Return all or some users.
  *  -> POST   "/"       - Creates new user.
  *  -> GET    "/id"     - Returns selected user.
- *  -> PUT    "/id"     - Updates selected user.
+ *  -> PUT    "/id"     - Updates selected user. (NOT IMPLEMENTED)
  *  -> DELETE "/id"     - Deletes selected user.
  *
  * Middleware:
@@ -46,8 +46,17 @@ router.post('/', valUserSchema, async function (req, res, next) {
 router.get('/:id', async function (req, res, next) {
   try {
     const result = await userTable.get(req.params.id);
-    if(!result) throw new Error('No User Found');
+    if (!result) throw new Error('No User Found');
     return res.status(200).json({ 'User': result });
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.delete('/:id', async function (req, res, next) {
+  try {
+    await userTable.remove(req.params.id);
+    return res.status(200).json('Success');
   } catch (error) {
     next(error);
   }
