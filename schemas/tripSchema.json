@@ -1,0 +1,423 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "trip_name": "New York Extravaganza",
+            "location": "New York City",
+            "hero_venue": {
+                "venue_id": "427c0500f964a52097211fe3",
+                "venue_name": "The Metropolitan Museum of Art (Metropolitan Museum of Art)",
+                "lat": 40.77972902126812,
+                "lng": -73.96341562271118,
+                "tips": {
+                    "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                    "user": "Stacy S"
+                }
+            },
+            "food_venue": {
+                "venue_id": "4fc6b972e4b0824ae3757353",
+                "venue_name": "Serafina Fabulous Pizza",
+                "lat": 40.776211454866484,
+                "lng": -73.96218656136645,
+                "tips": {
+                    "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                    "user": "Stacy S"
+                }
+            },
+            "last_venue": {
+                "venue_id": "4fc6b972e4b0824ae3757353",
+                "venue_name": "Serafina Fabulous Pizza",
+                "lat": 40.776211454866484,
+                "lng": -73.96218656136645,
+                "tips": {
+                    "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                    "user": "Stacy S"
+                }
+            }
+        }
+    ],
+    "required": [
+        "user_id",
+        "trip_name",
+        "location",
+        "hero_venue",
+        "food_venue"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "user_id": {
+            "$id": "#/properties/user_id",
+            "type": "integer",
+            "title": "The user_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "trip_name": {
+            "$id": "#/properties/trip_name",
+            "type": "string",
+            "title": "The trip_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "New York Extravaganza"
+            ]
+        },
+        "location": {
+            "$id": "#/properties/location",
+            "type": "string",
+            "title": "The location schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "New York City"
+            ]
+        },
+        "hero_venue": {
+            "$id": "#/properties/hero_venue",
+            "type": "object",
+            "title": "The hero_venue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "venue_id": "427c0500f964a52097211fe3",
+                    "venue_name": "The Metropolitan Museum of Art (Metropolitan Museum of Art)",
+                    "lat": 40.77972902126812,
+                    "lng": -73.96341562271118,
+                    "tips": {
+                        "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                        "user": "Stacy S"
+                    }
+                }
+            ],
+            "required": [
+                "venue_id",
+                "venue_name",
+                "lat",
+                "lng",
+                "tips"
+            ],
+            "properties": {
+                "venue_id": {
+                    "$id": "#/properties/hero_venue/properties/venue_id",
+                    "type": "string",
+                    "title": "The venue_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "427c0500f964a52097211fe3"
+                    ]
+                },
+                "venue_name": {
+                    "$id": "#/properties/hero_venue/properties/venue_name",
+                    "type": "string",
+                    "title": "The venue_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "The Metropolitan Museum of Art (Metropolitan Museum of Art)"
+                    ]
+                },
+                "lat": {
+                    "$id": "#/properties/hero_venue/properties/lat",
+                    "type": "number",
+                    "title": "The lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        40.77972902126812
+                    ]
+                },
+                "lng": {
+                    "$id": "#/properties/hero_venue/properties/lng",
+                    "type": "number",
+                    "title": "The lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        -73.96341562271118
+                    ]
+                },
+                "tips": {
+                    "$id": "#/properties/hero_venue/properties/tips",
+                    "type": "object",
+                    "title": "The tips schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                            "user": "Stacy S"
+                        }
+                    ],
+                    "required": [
+                        "tip",
+                        "user"
+                    ],
+                    "properties": {
+                        "tip": {
+                            "$id": "#/properties/hero_venue/properties/tips/properties/tip",
+                            "type": "string",
+                            "title": "The tip schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!"
+                            ]
+                        },
+                        "user": {
+                            "$id": "#/properties/hero_venue/properties/tips/properties/user",
+                            "type": "string",
+                            "title": "The user schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Stacy S"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "food_venue": {
+            "$id": "#/properties/food_venue",
+            "type": "object",
+            "title": "The food_venue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "venue_id": "4fc6b972e4b0824ae3757353",
+                    "venue_name": "Serafina Fabulous Pizza",
+                    "lat": 40.776211454866484,
+                    "lng": -73.96218656136645,
+                    "tips": {
+                        "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                        "user": "Stacy S"
+                    }
+                }
+            ],
+            "required": [
+                "venue_id",
+                "venue_name",
+                "lat",
+                "lng",
+                "tips"
+            ],
+            "properties": {
+                "venue_id": {
+                    "$id": "#/properties/food_venue/properties/venue_id",
+                    "type": "string",
+                    "title": "The venue_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "4fc6b972e4b0824ae3757353"
+                    ]
+                },
+                "venue_name": {
+                    "$id": "#/properties/food_venue/properties/venue_name",
+                    "type": "string",
+                    "title": "The venue_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Serafina Fabulous Pizza"
+                    ]
+                },
+                "lat": {
+                    "$id": "#/properties/food_venue/properties/lat",
+                    "type": "number",
+                    "title": "The lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        40.776211454866484
+                    ]
+                },
+                "lng": {
+                    "$id": "#/properties/food_venue/properties/lng",
+                    "type": "number",
+                    "title": "The lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        -73.96218656136645
+                    ]
+                },
+                "tips": {
+                    "$id": "#/properties/food_venue/properties/tips",
+                    "type": "object",
+                    "title": "The tips schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                            "user": "Stacy S"
+                        }
+                    ],
+                    "required": [
+                        "tip",
+                        "user"
+                    ],
+                    "properties": {
+                        "tip": {
+                            "$id": "#/properties/food_venue/properties/tips/properties/tip",
+                            "type": "string",
+                            "title": "The tip schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!"
+                            ]
+                        },
+                        "user": {
+                            "$id": "#/properties/food_venue/properties/tips/properties/user",
+                            "type": "string",
+                            "title": "The user schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Stacy S"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "last_venue": {
+            "$id": "#/properties/last_venue",
+            "type": "object",
+            "title": "The last_venue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "venue_id": "4fc6b972e4b0824ae3757353",
+                    "venue_name": "Serafina Fabulous Pizza",
+                    "lat": 40.776211454866484,
+                    "lng": -73.96218656136645,
+                    "tips": {
+                        "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                        "user": "Stacy S"
+                    }
+                }
+            ],
+            "required": [
+                "venue_id",
+                "venue_name",
+                "lat",
+                "lng",
+                "tips"
+            ],
+            "properties": {
+                "venue_id": {
+                    "$id": "#/properties/last_venue/properties/venue_id",
+                    "type": "string",
+                    "title": "The venue_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "4fc6b972e4b0824ae3757353"
+                    ]
+                },
+                "venue_name": {
+                    "$id": "#/properties/last_venue/properties/venue_name",
+                    "type": "string",
+                    "title": "The venue_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Serafina Fabulous Pizza"
+                    ]
+                },
+                "lat": {
+                    "$id": "#/properties/last_venue/properties/lat",
+                    "type": "number",
+                    "title": "The lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        40.776211454866484
+                    ]
+                },
+                "lng": {
+                    "$id": "#/properties/last_venue/properties/lng",
+                    "type": "number",
+                    "title": "The lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        -73.96218656136645
+                    ]
+                },
+                "tips": {
+                    "$id": "#/properties/last_venue/properties/tips",
+                    "type": "object",
+                    "title": "The tips schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "tip": "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!",
+                            "user": "Stacy S"
+                        }
+                    ],
+                    "required": [
+                        "tip",
+                        "user"
+                    ],
+                    "properties": {
+                        "tip": {
+                            "$id": "#/properties/last_venue/properties/tips/properties/tip",
+                            "type": "string",
+                            "title": "The tip schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "You probably need two days (or lots of dedication and an early start) to see the Met in its entirety. Go in and grab a map to make your game plan ahead of time if you can. I loved the American wing!"
+                            ]
+                        },
+                        "user": {
+                            "$id": "#/properties/last_venue/properties/tips/properties/user",
+                            "type": "string",
+                            "title": "The user schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Stacy S"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

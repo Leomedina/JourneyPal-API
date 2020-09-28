@@ -1,9 +1,20 @@
 \c journey 
 
-DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS Users;
+DROP TABLE IF EXISTS Trips;
 
-CREATE TABLE users (
-  id serial PRIMARY KEY,
-  email text,
-  password text NOT NULL
+CREATE TABLE Users (
+  id SERIAL PRIMARY KEY,
+  email TEXT NOT NULL,
+  password TEXT NOT NULL
+);
+
+CREATE TABLE Trips (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  location TEXT NOT NULL,
+  hero_venue TEXT NOT NULL,
+  food_venue TEXT NOT NULL,
+  last_venue TEXT,
+  FOREIGN KEY (user_id) REFERENCES Users(id) 
 );
