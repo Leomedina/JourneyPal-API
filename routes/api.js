@@ -16,8 +16,9 @@ const foursquare = require('../helpers/foursquareAPI');
 
 router.get('/', async function (req, res, next) {
   try {
-    const result = await foursquare.getRecommendations("new york city", "museum");
-    console.log(result);
+    const { location, category } = req.body;
+    console.log(location, category)
+    const result = await foursquare.getRecommendations(location, category);
     res.status(200).json(result)
   } catch (error) {
     next(error);
