@@ -1,0 +1,417 @@
+{
+  "meta": { "code": 200, "requestId": "5f71fd91bf10330a90272335" },
+  "response": {
+    "suggestedFilters": {
+      "header": "Tap to show:",
+      "filters": [
+        { "name": "Open now", "key": "openNow" },
+        { "name": "$-$$$$", "key": "price" }
+      ]
+    },
+    "geocode": {
+      "what": "",
+      "where": "new york city",
+      "center": { "lat": 40.742185, "lng": -73.992602 },
+      "displayString": "New York, NY, United States",
+      "cc": "US",
+      "geometry": {
+        "bounds": {
+          "ne": { "lat": 40.882214, "lng": -73.907 },
+          "sw": { "lat": 40.679548, "lng": -74.047285 }
+        }
+      },
+      "slug": "new-york-city-new-york",
+      "longId": "72057594043056517"
+    },
+    "headerLocation": "New York",
+    "headerFullLocation": "New York",
+    "headerLocationGranularity": "city",
+    "query": "museum",
+    "totalResults": 185,
+    "suggestedBounds": {
+      "ne": { "lat": 40.78756406027168, "lng": -73.95483832668566 },
+      "sw": { "lat": 40.73721709809243, "lng": -74.01143344226409 }
+    },
+    "groups": [
+      {
+        "type": "Recommended Places",
+        "name": "recommended",
+        "items": [
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "427c0500f964a52097211fe3",
+              "name": "The Metropolitan Museum of Art (Metropolitan Museum of Art)",
+              "contact": {},
+              "location": {
+                "address": "1000 5th Ave",
+                "crossStreet": "btwn E 80th & E 84th St",
+                "lat": 40.77972902126812,
+                "lng": -73.96341562271118,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.77972902126812,
+                    "lng": -73.96341562271118
+                  }
+                ],
+                "postalCode": "10028",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "1000 5th Ave (btwn E 80th & E 84th St)",
+                  "New York, NY 10028",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d18f941735",
+                  "name": "Art Museum",
+                  "pluralName": "Art Museums",
+                  "shortName": "Art Museum",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": { "count": 0, "groups": [] },
+              "hereNow": {
+                "count": 19,
+                "summary": "19 people are here",
+                "groups": [
+                  {
+                    "type": "others",
+                    "name": "Other people here",
+                    "count": 19,
+                    "items": []
+                  }
+                ]
+              }
+            },
+            "referralId": "e-0-427c0500f964a52097211fe3-0"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4f2715dce4b063d40326c3cd",
+              "name": "Architecture and Design @ MOMA",
+              "contact": {},
+              "location": {
+                "address": "11 W 53rd St",
+                "lat": 40.761546910406985,
+                "lng": -73.97673243578174,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.761546910406985,
+                    "lng": -73.97673243578174
+                  }
+                ],
+                "postalCode": "10019",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "11 W 53rd St",
+                  "New York, NY 10019",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d18f941735",
+                  "name": "Art Museum",
+                  "pluralName": "Art Museums",
+                  "shortName": "Art Museum",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": { "count": 0, "groups": [] },
+              "hereNow": { "count": 0, "summary": "Nobody here", "groups": [] }
+            },
+            "referralId": "e-0-4f2715dce4b063d40326c3cd-1"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4af5a46af964a520b5fa21e3",
+              "name": "Museum of Modern Art (MoMA)",
+              "contact": {},
+              "location": {
+                "address": "11 W 53rd St",
+                "crossStreet": "btwn 5th & 6th Ave",
+                "lat": 40.76141150395245,
+                "lng": -73.97746170919268,
+                "postalCode": "10019",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "11 W 53rd St (btwn 5th & 6th Ave)",
+                  "New York, NY 10019",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d18f941735",
+                  "name": "Art Museum",
+                  "pluralName": "Art Museums",
+                  "shortName": "Art Museum",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": { "count": 0, "groups": [] },
+              "hereNow": {
+                "count": 13,
+                "summary": "13 people are here",
+                "groups": [
+                  {
+                    "type": "others",
+                    "name": "Other people here",
+                    "count": 13,
+                    "items": []
+                  }
+                ]
+              }
+            },
+            "referralId": "e-0-4af5a46af964a520b5fa21e3-2"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "421a7600f964a5209d1f1fe3",
+              "name": "Whitney Museum of American Art",
+              "contact": {},
+              "location": {
+                "address": "99 Gansevoort St",
+                "crossStreet": "btwn 10th Ave & Washington St",
+                "lat": 40.739505596373306,
+                "lng": -74.00886093701054,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.739505596373306,
+                    "lng": -74.00886093701054
+                  }
+                ],
+                "postalCode": "10014",
+                "cc": "US",
+                "neighborhood": "Meatpac",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "99 Gansevoort St (btwn 10th Ave & Washington St)",
+                  "New York, NY 10014",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d18f941735",
+                  "name": "Art Museum",
+                  "pluralName": "Art Museums",
+                  "shortName": "Art Museum",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_art_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": { "count": 0, "groups": [] },
+              "hereNow": {
+                "count": 13,
+                "summary": "13 people are here",
+                "groups": [
+                  {
+                    "type": "others",
+                    "name": "Other people here",
+                    "count": 13,
+                    "items": []
+                  }
+                ]
+              }
+            },
+            "referralId": "e-0-421a7600f964a5209d1f1fe3-3"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4a746fb2f964a52025de1fe3",
+              "name": "The Jewish Museum",
+              "contact": {},
+              "location": {
+                "address": "1109 5th Ave",
+                "crossStreet": "at E 92nd St",
+                "lat": 40.7852755619908,
+                "lng": -73.95741083193923,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 40.7852755619908,
+                    "lng": -73.95741083193923
+                  },
+                  { "label": "entrance", "lat": 40.785474, "lng": -73.957349 }
+                ],
+                "postalCode": "10128",
+                "cc": "US",
+                "city": "New York",
+                "state": "NY",
+                "country": "United States",
+                "formattedAddress": [
+                  "1109 5th Ave (at E 92nd St)",
+                  "New York, NY 10128",
+                  "United States"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d181941735",
+                  "name": "Museum",
+                  "pluralName": "Museums",
+                  "shortName": "Museum",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": { "count": 0, "groups": [] },
+              "venuePage": { "id": "33720137" },
+              "hereNow": { "count": 0, "summary": "Nobody here", "groups": [] }
+            },
+            "referralId": "e-0-4a746fb2f964a52025de1fe3-4"
+          }
+        ]
+      }
+    ]
+  }
+}

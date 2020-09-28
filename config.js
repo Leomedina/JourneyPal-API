@@ -4,6 +4,7 @@ require("dotenv").config();
 const SECRET_KEY = process.env.SECRET_KEY || "test";
 const FOURSQUARE_CID = process.env.FOURSQUARE_CID;
 const FOURSQUARE_CS = process.env.FOURSQUARE_CS;
+const FOURSQUARE_V = '20180323'
 
 const PORT = +process.env.PORT || 3000;
 let DB_URI;
@@ -19,5 +20,6 @@ module.exports = {
   PORT,
   DB_URI,
   FOURSQUARE_CID,
-  FOURSQUARE_CS
+  FOURSQUARE_CS,
+  FOURSQUARE_V
 };
