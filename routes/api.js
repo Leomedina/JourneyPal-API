@@ -27,8 +27,8 @@ router.get('/venue', async function (req, res, next) {
 
 router.get('/eat', async function (req, res, next) {
   try {
-    const { lat, long, type } = req.body;
-    const result = await foursquare.getFoodRec(lat, long, type);
+    const { lat, lng, type } = req.body;
+    const result = await foursquare.getFoodRec(lat, lng, type);
     res.status(200).json(foursquareHelper.venueResultCleaned(result));
   } catch (error) {
     next(error);

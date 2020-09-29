@@ -3,17 +3,17 @@ global.__basedir = __dirname;
 const express = require('express');
 const ExpressError = require('./helpers/ExpressError');
 const app = express();
-const userRoutes = require('./routes/users');
-const tripRoutes = require('./routes/trips');
+const usersRoutes = require('./routes/users');
+const tripsRoutes = require('./routes/trips');
 const apiRoutes = require('./routes/api');
 
 /** Allow JSON body parsing */
 app.use(express.json());
 
 /** Routes */
-app.use('/users', userRoutes);
+app.use('/users', usersRoutes);
 app.use('/api', apiRoutes);
-app.use('/trips', tripRoutes);
+app.use('/trips', tripsRoutes);
 
 app.get('/', function (req, res, next) {
   return res.status(200).json({

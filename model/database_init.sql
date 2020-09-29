@@ -11,6 +11,7 @@ CREATE TABLE Users (
 
 CREATE TABLE Trips (
   id SERIAL PRIMARY KEY,
+  trip_name TEXT NOT NULL,
   user_id INTEGER NOT NULL,
   location TEXT NOT NULL,
   hero_venue TEXT NOT NULL,

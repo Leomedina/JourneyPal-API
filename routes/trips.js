@@ -47,7 +47,7 @@ router.get('/:id', async function (req, res, next) {
     return res.status(200).json({ 'Trip': result });
   } catch (error) {
     next(error);
-  }
+  };
 });
 
 router.delete('/:id', async function (req, res, next) {
@@ -56,7 +56,7 @@ router.delete('/:id', async function (req, res, next) {
     return res.status(200).json('Success');
   } catch (error) {
     next(error);
-  }
+  };
 });
 
 module.exports = router;
