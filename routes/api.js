@@ -18,6 +18,7 @@ const foursquareHelper = require('../helpers/foursquareHelpers');
 router.get('/venue', async function (req, res, next) {
   try { 
     const { location, category } = req.body;
+    console.log(location, category);
     const result = await foursquare.getRecommendations(location, category);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
