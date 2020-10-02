@@ -23,6 +23,7 @@ const { tripTable } = require('../model/models');
 router.get('/', async function (req, res, next) {
   try {
     const results = await tripTable.findAll(req.query);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     return res.status(200).json({ "trips": results });
   } catch (error) {
     return next(error);
