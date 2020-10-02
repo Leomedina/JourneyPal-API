@@ -6,7 +6,7 @@ const FOURSQUARE_CID = process.env.FOURSQUARE_CID;
 const FOURSQUARE_CS = process.env.FOURSQUARE_CS;
 const FOURSQUARE_V = '20180323'
 
-const PORT = +process.env.PORT || 3000;
+const PORT = +process.env.PORT || 3005;
 let DB_URI;
 
 if (process.env.NODE_ENV === "test") {

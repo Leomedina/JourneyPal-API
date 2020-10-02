@@ -6,9 +6,11 @@ const app = express();
 const usersRoutes = require('./routes/users');
 const tripsRoutes = require('./routes/trips');
 const apiRoutes = require('./routes/api');
+const cors = require("cors");
 
 /** Allow JSON body parsing */
 app.use(express.json());
+app.use(cors());
 
 /** Routes */
 app.use('/users', usersRoutes);
