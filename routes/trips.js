@@ -23,6 +23,7 @@ const { tripTable } = require('../model/models');
 router.get('/', async function (req, res, next) {
   try {
     const results = await tripTable.findAll(req.query);
+
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers,X-Access-Token,XKey,Authorization');
@@ -32,6 +33,15 @@ router.get('/', async function (req, res, next) {
     return next(error);
   };
 });
+
+router.options('/', async function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers,X-Access-Token,XKey,Authorization');
+
+  return res.status(200);
+});
+
 
 /** POST to '/trips' */
 router.post('/', valTripSchema, async function (req, res, next) {
